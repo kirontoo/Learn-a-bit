@@ -1,5 +1,3 @@
-/* NOTE: start live server with 'live-server ./Challeng01' */
-
 :root {
 	--text-color: 241, 255, 246;
 	--primary-color: #24E5A3;
@@ -30,18 +28,17 @@
 }
 
 .nav-container {
-	align-items: space-between;
+	align-items: center;
 	align-self: center;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 1em;
+	margin: 0.5em 0;
 	width: 90%;
-	/* TODO: fix the vertical centering */
 }
 
 ul, .nav-links {
-	/* display: none; */
+	display: none;
 	align-self: center;
 	margin-bottom: 0.5em;
 	margin-top: 1em;
@@ -90,7 +87,7 @@ main {
 	background-position: 50%;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 }
 
