@@ -1,14 +1,14 @@
 :root {
-	--text-color: #F1FFF6;
+	--text-color: 241, 255, 246;
 	--primary-color: #24E5A3;
 	--blue-color: #5EF4D6;
 	--purple-color: #4143B1;
-	--black-color: #221727;
+	--black-color: 34, 23, 39;
 }
 
 * {
 	font-family: 'Rubik', sans-serif;
-  color: var(--text-color);
+  color: rgba(var(--text-color), 1);
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@
 /* navbar */
 .navbar {
 	align-items: center;
-	background-color: var(--black-color);
+	background-color: rgba(var(--black-color), 1);
 	display: flex;
 	flex-direction: row;
 	height: 4em;
@@ -65,10 +65,10 @@ ul, .nav-links {
 /* main body styles */
 main {
 	align-items: center;
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background: url("images/mintbean-dome.png");
+	background-position: 50%;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -87,18 +87,16 @@ main {
 /* Card */
 .card {
 	align-items: center;
-	background: var(--black-color);
+	background: rgba(var(--black-color), 0.8);
 	border-radius: 0.4em;
 	border: solid 3px var(--blue-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	opacity: 80%;
 	padding: 1.4em;
 }
 
 .card-title {
-  opacity: 100%;
   font-size: 1.5em;
   text-transform: uppercase;
 }
@@ -110,6 +108,8 @@ main {
 .card-content {
 	margin: 1em 0;
 	line-height: 1.5em;
+	color: rgba(var(--text-color), 0.6);
+	font-size: 0.9em;
 }
 
 .card-footer {
@@ -127,9 +127,8 @@ main {
 	background-color: var(--blue-color);
 	border-radius: 5px;
 	border: none;
-	color: var(--black-color);
+	color: rgba(var(--black-color), 1);
 	font-size: 1.4em;
-	opacity: 100%;
 	padding: 0.2em 1em;
 	text-align: center;
 	text-transform: uppercase;
