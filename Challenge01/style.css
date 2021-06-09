@@ -1,3 +1,5 @@
+/* NOTE: start live server with 'live-server ./Challeng01' */
+
 :root {
 	--text-color: 241, 255, 246;
 	--primary-color: #24E5A3;
@@ -35,6 +37,7 @@
 	justify-content: space-between;
 	margin-top: 1em;
 	width: 90%;
+	/* TODO: fix the vertical centering */
 }
 
 ul, .nav-links {
@@ -135,6 +138,8 @@ main {
 	width: 100%;
 }
 
+
+/* TODO: only appears on desktop NOT mobile */
 .border-right {
 	border-right: 1px solid white;
 }
