@@ -1,0 +1,91 @@
+:root {
+  --white-rgb: 241,255,246;
+  --white-color: #f1fff6;
+  --black-color: #221727;
+  --cyan-color: #24e5a3;
+  --blue-color: #5ef4d6;
+  --purple-color: #4143b1;
+}
+
+body {
+  align-items: center;
+  background: var(--purple-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Viga', sans-serif;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 1em;
+  width: 90%;
+}
+
+.title {
+  color: var(--cyan-color);
+  font-size: 1.4em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--black-color);
+  border-radius: 0.5em;
+  border: 0.1em solid var(--cyan-color);
+  overflow: hidden;
+  width: 100%;
+}
+
+.card__header {
+  background-image: url("../images/mintbean-dome.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38vh;
+  width: 100%;
+}
+
+.card__header-image {
+  border-radius: 0.5em 0.5em 0 0;
+  height: inherit;
+  width: auto;
+}
+
+.card__content {
+  margin: 1.4em;
+}
+
+.card__title, .card__description {
+  margin: 1.2rem 0;
+}
+
+.card__title {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card__description {
+  color: rgba(var(--white-rgb), 0.7);
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+.btn {
+  background: var(--cyan-color);
+  border-color: var(--cyan-color);
+  border-radius: 0.5em;
+  color: var(--black-color);
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2em;
+  padding: 0.4em;
+  text-align: center;
+  width: 100%;
+}
