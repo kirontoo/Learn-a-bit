@@ -1,7 +1,8 @@
 :root {
-  --white-rgb: 241,255,246;
+  --white-rgb: 241, 255, 246;
   --white-color: #f1fff6;
   --black-color: #221727;
+  --black-rgb: 34, 23, 39;
   --cyan-color: #24e5a3;
   --blue-color: #5ef4d6;
   --purple-color: #4143b1;
@@ -30,6 +31,7 @@ body {
   font-size: 1.4em;
   font-weight: 400;
   text-align: center;
+  text-shadow: 0px 3px 3px rgba(var(--black-rgb), 0.3);
   text-transform: uppercase;
   width: 100%;
 }
@@ -38,6 +40,7 @@ body {
   background-color: var(--black-color);
   border-radius: 0.5em;
   border: 0.1em solid var(--cyan-color);
+  box-shadow: 0px 4px 3px rgba(var(--black-rgb), 0.3);
   overflow: hidden;
   width: 100%;
 }
@@ -49,12 +52,6 @@ body {
   background-size: cover;
   height: 38vh;
   width: 100%;
-}
-
-.card__header-image {
-  border-radius: 0.5em 0.5em 0 0;
-  height: inherit;
-  width: auto;
 }
 
 .card__content {
@@ -78,14 +75,59 @@ body {
 }
 
 .btn {
-  background: var(--cyan-color);
-  border-color: var(--cyan-color);
+  background: var(--blue-color);
   border-radius: 0.5em;
+  border: none;
   color: var(--black-color);
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
   font-size: 1.2em;
   padding: 0.4em;
   text-align: center;
+  text-transform: uppercase;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .card__header {
+    height: 60vh;
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: space-between;
+    padding: 0 1.2em;
+    width: 100%;
+  }
+
+  .card__title {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .card__description {
+    font-size: 0.9em;
+    margin: 0;
+  }
+
+  .btn {
+    font-size: 1.4em;
+    width: 50%;
+  }
 }
